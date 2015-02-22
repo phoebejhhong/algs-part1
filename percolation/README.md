@@ -14,6 +14,6 @@ http://coursera.cs.princeton.edu/algs4/assignments/percolation.html
 
  * Initialize all sites to be blocked.
  * Repeat the following until the system percolates:
-  * Choose a site (row i, column j) uniformly at random among all blocked sites.
-  * Open the site (row i, column j).
-  * The fraction of sites that are opened when the system percolates provides an estimate of the percolation threshold.
+    * Choose a site (row i, column j) uniformly at random among all blocked sites.
+    * Open the site (row i, column j).
+ * The fraction of sites that are opened when the system percolates provides an estimate of the percolation threshold.
