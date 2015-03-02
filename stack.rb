@@ -28,6 +28,7 @@ class StackOfStrings
     first.nil?
   end
 
+  private
   # inner class
   class Node
     attr_accessor :item, :next
