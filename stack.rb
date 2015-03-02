@@ -111,4 +111,8 @@ class ResizingArray
     (0..capacity-1).each { |idx| copy[idx] = stack[idx] }
     self.stack = copy
   end
+
+  def each(&block)
+    stack.each { |item| block.call(item) }
+  end
 end
