@@ -1,7 +1,7 @@
 # Algorithms, Part I, Week2, Stacks and Queues
 
-# Linked-list implementation of stack of strings
-class LinkedQueueOfStrings
+# Linked-list implementation of stack
+class Queue
   attr_accessor :first, :last
 
   def initialize

@@ -1,7 +1,7 @@
 # Algorithms, Part I, Week2, Stacks and Queues
 
-# Linked-list implementation of stack of strings
-class StackOfStrings
+# Linked-list implementation of stack
+class Stack
 
   attr_accessor :first
 
@@ -36,8 +36,8 @@ class StackOfStrings
 
 end
 
-# Fixed-capacity array implementation of stack of strings
-class FixedCapacityStackOfStrings
+# Fixed-capacity array implementation of stack
+class FixedCapacityStack
   attr_accessor :stack, :idx
 
   def initialize(capacity)
@@ -64,8 +64,8 @@ class FixedCapacityStackOfStrings
   end
 end
 
-# Resizing array implementation of stack of strings
-class ResizingArrayStackOfStrings
+# Resizing array implementation of stack
+class ResizingArray
   attr_accessor :stack, :idx
 
   def initialize
