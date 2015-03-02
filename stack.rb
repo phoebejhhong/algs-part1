@@ -28,6 +28,14 @@ class Stack
     first.nil?
   end
 
+  def each(&block)
+    current_node = first
+    while (current_node)
+      block.call(current_node)
+      current_node = current_node.next
+    end
+  end
+
   private
   # inner class
   class Node
