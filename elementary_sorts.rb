@@ -29,14 +29,33 @@ class Array
   def shell_sort
     length = self.length
     h = 1
-    while 
+    while h < length/3
+      # 3x+1 increment sequence (1, 4, 13, 40, 121, 364, ...)
+      h = 3 * h + 1
+    end
+
+    while h > 0
+      # h-sort the array (insertion sort)
+      for i in (h..length-1)
+        j = i
+        while j >= h
+          exchange(j, j-h) if self[j] < self[j-h]
+          j -= h
+        end
+      end
+      h /= 3
+    end
+
+    self
   end
 
-  # helper
+
+  # helper function
   def exchange(idx1, idx2)
     self[idx1], self[idx2] = self[idx2], self[idx1]
   end
 end
 
-print [4,2,6,0,3].selection_sort
-print [4,2,6,0,3].insertion_sort
+print [4,2,6,7,1,0,3,5].selection_sort
+print [4,2,6,7,1,0,3,5].insertion_sort
+print [4,2,6,7,1,0,3,5].shell_sort
