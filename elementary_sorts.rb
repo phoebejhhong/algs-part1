@@ -48,7 +48,7 @@ class Array
 
     self
   end
-  
+
   # helper function
   def exchange(idx1, idx2)
     self[idx1], self[idx2] = self[idx2], self[idx1]
@@ -56,6 +56,6 @@ class Array
 
 end
 
-print [4,2,6,7,1,0,3,5].selection_sort
-print [4,2,6,7,1,0,3,5].insertion_sort
-print [4,2,6,7,1,0,3,5].shell_sort
+puts [4,2,6,7,1,0,3,5].selection_sort
+puts [4,2,6,7,1,0,3,5].insertion_sort
+puts [4,2,6,7,1,0,3,5].shell_sort
