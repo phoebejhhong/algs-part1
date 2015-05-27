@@ -1,10 +1,10 @@
-require 'byebug'
 class QuickSort
 
   def initialize(input)
     print sort(input.shuffle)
   end
 
+  # use extra arrays instead of inplace partitioning
   def sort(array)
     return array if array.length <= 1
     less, more = [], []
@@ -18,6 +18,5 @@ class QuickSort
 
 end
 
-# test
 QuickSort.new([4,2,6,7,1,0,3,5])
 QuickSort.new ["S", "O", "R", "T", "S", "A", "M", "P", "L", "E"]
