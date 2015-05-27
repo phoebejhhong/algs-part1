@@ -1,5 +1,4 @@
 class MergeSort
-  attr_reader :input
 
   def initialize(input)
     print sort(input)
