@@ -1,5 +1,6 @@
 require 'minitest/autorun'
 require_relative 'deque.rb'
+require_relative 'randomized_queue.rb'
 
 class DequeTest < Minitest::Test
   def setup
@@ -64,4 +65,29 @@ class DequeTest < Minitest::Test
     assert_equal 6, @dq.first.item
     assert_equal 7, @dq.last.item
   end
+end
+
+class RandomizedQueueTest < Minitest::Test
+  def setup
+    @rq = RandomizedQueue.new
+  end
+
+  def test_enqueue
+    @rq.enqueue(5)
+    assert_equal 1, @rq.size
+  end
+
+  def test_dequeue
+    # not going to test randomness
+    @rq.enqueue(5)
+    @rq.enqueue(6)
+    @rq.enqueue(7)
+    @rq.enqueue(8)
+    outputs = []
+    4.times { outputs << @rq.dequeue}
+
+    assert_equal [5, 6, 7, 8], outputs.sort
+    assert_equal 0, @rq.size
+  end
+
 end
