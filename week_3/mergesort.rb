@@ -1,3 +1,5 @@
+# Algorithms, Part I, Week 3, Mergesort
+
 class MergeSort
 
   def initialize(input)

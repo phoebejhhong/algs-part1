@@ -1,3 +1,5 @@
+# Algorithms, Part I, Week 3, Quicksort
+
 class QuickSort
 
   def initialize(input)

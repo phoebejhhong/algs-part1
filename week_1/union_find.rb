@@ -1,4 +1,4 @@
-# Algorithms, Part I, Week1, Union-Find
+# Algorithms, Part I, Week 1, Union-Find
 
 class QuickFind
   attr_accessor :id

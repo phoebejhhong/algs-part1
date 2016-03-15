@@ -1,4 +1,4 @@
-# Algorithms, Part I, Week2, Elementary Sorts
+# Algorithms, Part I, Week 2, Elementary Sorts
 
 class Array
 

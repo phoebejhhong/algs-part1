@@ -1,6 +1,5 @@
 load 'stack.rb'
-require 'byebug'
-# Algorithms, Part I, Week2, Stacks and Queues
+# Algorithms, Part I, Week 2, Stacks and Queues
 
 # Dijkstra's two-stack algorithm:
 # Arithmetic expression evaluation with two stacks,

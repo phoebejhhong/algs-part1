@@ -1,4 +1,4 @@
-# Algorithms, Part I, Week2, Stacks and Queues
+# Algorithms, Part I, Week 2, Stacks and Queues
 
 # Linked-list implementation of stack
 class Queue
