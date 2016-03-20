@@ -1,4 +1,4 @@
-require './percolation'
+require_relative './percolation'
 require 'descriptive_statistics'
 
 class PercolationStats

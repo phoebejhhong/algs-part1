@@ -7,10 +7,6 @@ class QuickFind
     self.id = (0..n-1).to_a
   end
 
-  def id
-    @id
-  end
-
   def connected(p, q)
     id[p] == id[q]
   end

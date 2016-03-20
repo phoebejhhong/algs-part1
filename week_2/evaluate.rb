@@ -1,4 +1,4 @@
-load 'stack.rb'
+require_relative 'stack'
 # Algorithms, Part I, Week 2, Stacks and Queues
 
 # Dijkstra's two-stack algorithm:

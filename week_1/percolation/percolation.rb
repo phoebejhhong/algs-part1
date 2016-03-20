@@ -1,4 +1,4 @@
-require '../union_find'
+require_relative '../union_find'
 
 class Percolation
 
