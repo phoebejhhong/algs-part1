@@ -29,12 +29,27 @@ class ElementaryMinPriorityQueue
   end
 end
 
-class BinaryHeapMaxPriorityQueue
+class BinaryHeap
   attr_accessor :pq
 
   def initialize
     # array representation of binary heap incides start at 1
     @pq = [nil]
+  end
+
+  def sort
+    n = last_idx
+    (n/2).downto(first_idx) do |idx|
+      sink(idx)
+    end
+
+    while n > first_idx
+      exchange(first_idx, n)
+      n -= 1
+      sink(first_idx, n)
+    end
+
+    pq.drop(1)
   end
 
   def swim(idx)
@@ -44,10 +59,10 @@ class BinaryHeapMaxPriorityQueue
     end
   end
 
-  def sink(idx)
-    while idx*2 <= last_idx
+  def sink(idx, n = last_idx)
+    while idx*2 <= n
       child_idx = idx*2
-      if child_idx < last_idx && less(child_idx, child_idx + 1)
+      if child_idx < n && less(child_idx, child_idx + 1)
         child_idx += 1
       end
       return unless less(idx, child_idx)

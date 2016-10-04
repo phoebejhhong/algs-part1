@@ -14,7 +14,7 @@ class PriorityQueueTest < Minitest::Test
   end
 
   def test_binary_heap_max_priority_queue
-    pq = BinaryHeapMaxPriorityQueue.new
+    pq = BinaryHeap.new
 
     pq.insert(5)
     pq.insert(9)
@@ -22,5 +22,16 @@ class PriorityQueueTest < Minitest::Test
     pq.insert(7)
 
     assert_equal 9, pq.delete_max
+  end
+
+  def test_binary_heap_sort
+    pq = BinaryHeap.new
+
+    pq.insert(5)
+    pq.insert(9)
+    pq.insert(3)
+    pq.insert(7)
+
+    assert_equal [3,5,7,9], pq.sort
   end
 end
