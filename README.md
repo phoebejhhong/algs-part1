@@ -2,31 +2,21 @@
 Based on *Algorithms, 4th Edition* by Robert Sedgewick and Kevin Wayne ([Booksite](http://algs4.cs.princeton.edu/))
 
 ## Union-Find
-* [Union-Find][union-find]
-* Project: [Percolation][percolation]
-
-[union-find]:./week_1/union_find.rb
-[percolation]:./week_1/percolation
+* [Union-Find](./week_1/union_find.rb)
+* Project: [Percolation](./week_1/percolation)
 
 ## Stacks and Queues
-* [Stack][stack]
-* [Queue][queue]
-* [Dijkstra's two-stack algorithm][evaluate]
-* Project: [Randomized Queues and Deques][randomized-queues]
-
-[stack]:./week_2/stack.rb
-[queue]:./week_2/queue.rb
-[evaluate]:./week_2/evaluate.rb
-[randomized-queues]:./week_2/queues
+* [Stack](./week_2/stack.rb)
+* [Queue](./week_2/queue.rb)
+* [Dijkstra's two-stack algorithm](./week_2/evaluate.rb)
+* Project: [Randomized Queues and Deques](./week_2/queues)
 
 ## Elementary Sorts
-* [Elementary Sorts][elementary-sorts] (Selection sort, insertion sort, shell sort)
-
-[elementary-sorts]:./week_2/elementary_sorts.rb
+* [Elementary Sorts](./week_2/elementary_sorts.rb) (Selection sort, insertion sort, shell sort)
 
 ## Two Classic Sorting Algorithms
-* [Mergesort][mergesort]
-* [Quicksort][quicksort]
+* [Mergesort](./week_3/mergesort.rb)
+* [Quicksort](./week_3/quicksort.rb)
 
-[mergesort]:./week_3/mergesort.rb
-[quicksort]:./week_3/quicksort.rb
+## Priority Queues
+* [Elementary Priority Queue and Binary Heap](./week_4/priority_queue.rb) / [Tests](./week_4/priority_queue_test.rb)
