@@ -1,5 +1,5 @@
 require 'minitest/autorun'
-require_relative 'eight_puzzle.rb'
+require_relative 'eight_puzzle_solver'
 
 class BoardTest < Minitest::Test
   def test_goal
