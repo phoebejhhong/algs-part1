@@ -1,16 +1,16 @@
 class Board
   attr_accessor :grid, :dimension, :num_of_moves
 
-  def initialize(blocks)
+  def initialize(blocks, num_of_moves = 0)
     @dimension = blocks.size
     @grid = Marshal.load(Marshal.dump(blocks))
-    @num_of_moves = 0
+    @num_of_moves = num_of_moves
   end
 
   def self.goal(dimension)
     goal_blocks = []
     (1..dimension**2-1).to_a.each do |block|
-      if block % 3 == 1
+      if block % dimension == 1
         goal_blocks << [block]
       else
         goal_blocks.last << block
@@ -73,7 +73,7 @@ class Board
   def neighbors
     pos_of_blank = position(0)
     neighboring_positions(pos_of_blank).map do |pos_of_neighbor|
-      new_board = Board.new(grid)
+      new_board = Board.new(grid, num_of_moves + 1)
       new_board.switch(pos_of_blank, pos_of_neighbor)
     end
   end
