@@ -1,10 +1,10 @@
 class Board
-  attr_accessor :grid, :dimension, :num_of_moves
+  attr_accessor :grid, :dimension, :number_of_moves
 
-  def initialize(blocks, num_of_moves = 0)
+  def initialize(blocks, number_of_moves = 0)
     @dimension = blocks.size
     @grid = Marshal.load(Marshal.dump(blocks))
-    @num_of_moves = num_of_moves
+    @number_of_moves = number_of_moves
   end
 
   def self.goal(dimension)
@@ -55,7 +55,7 @@ class Board
       end
     end
 
-    num_of_wrong_position_blocks + num_of_moves
+    num_of_wrong_position_blocks + number_of_moves
   end
 
   def manhattan
@@ -67,13 +67,13 @@ class Board
       end
     end
 
-    sum_of_manhattan_distance + num_of_moves
+    sum_of_manhattan_distance + number_of_moves
   end
 
   def neighbors
     pos_of_blank = position(0)
     neighboring_positions(pos_of_blank).map do |pos_of_neighbor|
-      new_board = Board.new(grid, num_of_moves + 1)
+      new_board = Board.new(grid, number_of_moves + 1)
       new_board.switch(pos_of_blank, pos_of_neighbor)
     end
   end
@@ -103,8 +103,9 @@ class Board
   end
 
   def to_s
+    puts dimension
     grid.each do |row|
-      puts row.join(' ')
+      puts ' ' + row.join(' ')
     end
   end
 end

@@ -85,6 +85,13 @@ class BinaryHeap
     max
   end
 
+  def delete_min
+    if last_idx % 2 == 0 && less(last_idx-1, last_idx)
+      exchange(last_idx-1, last_idx)
+    end
+    pq.pop
+  end
+
   def first_idx
     1
   end
