@@ -11,12 +11,11 @@ Based on *Algorithms, 4th Edition* by Robert Sedgewick and Kevin Wayne ([Booksit
 * [Dijkstra's two-stack algorithm](./week_2/evaluate.rb)
 * Project: [Randomized Queues and Deques](./week_2/queues)
 
-## Elementary Sorts
+## Sorting
 * [Elementary Sorts](./week_2/elementary_sorts.rb) (Selection sort, insertion sort, shell sort)
-
-## Two Classic Sorting Algorithms
 * [Mergesort](./week_3/mergesort.rb)
 * [Quicksort](./week_3/quicksort.rb)
 
 ## Priority Queues
 * [Elementary Priority Queue and Binary Heap](./week_4/priority_queue.rb) / [Tests](./week_4/priority_queue_test.rb)
+* Project: [8-puzzle](./week_4/eight_puzzle)
